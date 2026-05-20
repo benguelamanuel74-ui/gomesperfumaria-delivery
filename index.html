@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomes Perfumaria & Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/logo.png.png" alt="Gomes Perfumaria">
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="active">INÍCIO</a>
+            <a href="#produtos">PRODUTOS</a>
+            <a href="#">SOBRE</a>
+            <a href="#">CONTACTOS</a>
+        </nav>
+        <div class="nav-icons">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="#"><i class='bx bx-user'></i></a>
+            <a href="#" class="cart-icon">
+                <i class='bx bx-shopping-bag'></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <span class="subtitle">ELEGÂNCIA EM CADA</span>
+            <h1>FRAGRÂNCIA</h1>
+            <div class="divider"></div>
+            <p>Descubra perfumes luxuosos com entrega rápida e atendimento premium.</p>
+            <button class="btn-primary" onclick="scrollToProdutos()">
+                <i class='bx bx-shopping-bag'></i> COMPRAR AGORA
+            </button>
+        </div>
+        <div class="hero-image">
+            <img src="images/perfume-hero.png.png" alt="Perfume de Destaque">
+        </div>
+    </section>
+
+    <section class="produtos-section" id="produtos">
+        <h2 class="section-title">NOSSOS PERFUMES</h2>
+        <div class="divider-center"></div>
+        
+        <div class="cards-container">
+
+            <div class="card-premium">
+                <div class="card-img-box">
+                    <img src="images/aee627de-3bb5-4a4f-ac06-171a14fc240e.jpeg" alt="Khamrah Lattafa">
+                </div>
+                <div class="card-info">
+                    <span class="brand">Lattafa</span>
+                    <h3>Asad Lattafa</h3>
+                    <p class="price">18.999 Kz</p>
+                    <button class="btn-card" onclick="adicionarAoCarrinho('Asad Lattafa')">Comprar</button>
+                </div>
+            </div>
+            <div class="card-premium">
+                <div class="card-img-box">
+                    <img src="images/Lattafa His Confession Eau de Parfum Masculino 100ml.jpeg" alt="Khamrah Lattafa">
+                </div>
+                <div class="card-info">
+                    <span class="brand">Lattafa</span>
+                    <h3>Lattafa His Confession Eau de Parfum Masculino</h3>
+                    <p class="price">25.999 Kz</p>
+                    <button class="btn-card" onclick="adicionarAoCarrinho('Lattafa His Confession Eau de Parfum Masculino')">Comprar</button>
+                </div>
+            </div>
+
+
+            <div class="card-premium">
+                <div class="card-img-box">
+                    <img src="images/Lattafa Perfume Hayaati.jpeg" alt="Lattafa Perfume Hayaati">
+                </div>
+                <div class="card-info">
+                    <span class="brand">Lattafa</span>
+                    <h3>Lattafa Perfume Hayaati</h3>
+                    <p class="price">15.999 Kz</p>
+                    <button class="btn-card" onclick="adicionarAoCarrinho('Lattafa Perfume Hayaati')">Comprar</button>
+                </div>
+            </div>
+            <div class="card-premium">
+                <div class="card-img-box">
+                    <img src="images/Matelot perfume.jpeg" alt="Matelot perfume">
+                </div>
+                <div class="card-info">
+                    <span class="brand">Lattafa</span>
+                    <h3>Matelot perfume</h3>
+                    <p class="price">15.999 Kz</p>
+                    <button class="btn-card" onclick="adicionarAoCarrinho('Matelot perfume')">Comprar</button>
+                </div>
+            </div>
+            <div class="card-premium">
+                <div class="card-img-box">
+                    <img src="images/Perfume Masculino Árabe.jpeg" alt="Perfume Masculino Árabe">
+                </div>
+                <div class="card-info">
+                    <span class="brand">Lattafa</span>
+                    <h3>Asad Bourbon</h3>
+                    <p class="price">16.999 Kz</p>
+                    <button class="btn-card" onclick="adicionarAoCarrinho('Asad Bourbon')">Comprar</button>
+                </div>
+            </div>
+            <div class="card-premium">
+                <div class="card-img-box">
+                    <img src="images/Parfum scandal.jpeg" alt="Parfum scandal">
+                </div>
+                <div class="card-info">
+                    <span class="brand">Lattafa</span>
+                    <h3>Scandal jean Paul GAULTIER</h3>
+                    <p class="price">28.999 Kz</p>
+                    <button class="btn-card" onclick="adicionarAoCarrinho('Scandal jean Paul GAULTIER')">Comprar</button>
+                </div>
+            </div>
+            <div class="card-premium">
+                <div class="card-img-box">
+                    <img src="images/AMERAT.jpeg" alt="Ameerat Al Arab Prive Rose">
+                </div>
+                <div class="card-info">
+                    <span class="brand">Lattafa</span>
+                    <h3>Ameerat Al Arab Prive Rose</h3>
+                    <p class="price">25.999 Kz</p>
+                    <button class="btn-card" onclick="adicionarAoCarrinho('Ameerat Al Arab Prive Rose')">Comprar</button>
+                </div>
+            </div>
+            <div class="card-premium">
+                <div class="card-img-box">
+                    <img src="images/OMG it’s so gooooood, creamy, delicious, anytime I spray this perf I feel like licking myself 🥰🔥.jpeg" alt="Eclaire Lattafa">
+                </div>
+                <div class="card-info">
+                    <span class="brand">Lattafa</span>
+                    <h3>Eclaire Lattafa</h3>
+                    <p class="price">22.999 Kz</p>
+                    <button class="btn-card" onclick="adicionarAoCarrinho('Eclaire Lattafa')">Comprar</button>
+                </div>
+            </div>
+            <div class="card-premium">
+                <div class="card-img-box">
+                    <img src="images/cavalo.jpeg" alt="Qaed Al Fursan">
+                </div>
+                <div class="card-info">
+                    <span class="brand">Lattafa</span>
+                    <h3>Qaed Al Fursan</h3>
+                    <p class="price">30.999 Kz</p>
+                    <button class="btn-card" onclick="adicionarAoCarrinho('Qaed Al Fursan')">Comprar</button>
+                </div>
+            </div>
+            <div class="card-premium">
+                <div class="card-img-box">
+                    <img src="images/FAKHAR.RED.jpeg" alt="Badee Al Oud">
+                </div>
+                <div class="card-info">
+                    <span class="brand">Lattafa</span>
+                <h3>Badee Al Oud</h3>
+                    <p class="price">23.999 Kz</p>
+                    <button class="btn-card" onclick="adicionarAoCarrinho('Khamrah Lattafa')">Comprar</button>
+                </div>
+            </div>
+            <div class="card-premium">
+                <div class="card-img-box">
+                    <img src="images/pm.jpeg" alt="9 Pm Rebel">
+                </div>
+                <div class="card-info">
+                    <span class="brand">Lattafa</span>
+                    <h3>9 Pm Rebel</h3>
+                    <p class="price">35.999 Kz</p>
+                    <button class="btn-card" onclick="adicionarAoCarrinho('9 Pm Rebel')">Comprar</button>
+                </div>
+            </div>
+            <div class="card-premium">
+                <div class="card-img-box">
+                    <img src="images/asadbranco.jpeg" alt="Asad yara">
+                </div>
+                <div class="card-info">
+                    <span class="brand">Lattafa</span>
+                    <h3>Asad yara</h3>
+                    <p class="price">15.999 Kz</p>
+                    <button class="btn-card" onclick="adicionarAoCarrinho('Asad yara')">Comprar</button>
+                </div>
+            </div>
+            <div class="card-premium">
+                <div class="card-img-box">
+                    <img src="images/fakhar.jpeg" alt="Fakhar Lattafa">
+                </div>
+                <div class="card-info">
+                    <span class="brand">Lattafa</span>
+                    <h3>Fakhar Lattafa</h3>
+                    <p class="price">25.999 Kz</p>
+                    <button class="btn-card" onclick="adicionarAoCarrinho('Fakhar Lattafa')">Comprar</button>
+                </div>
+            </div>
+            <div class="card-premium">
+                <div class="card-img-box">
+                    <img src="images/khamrah.png.png" alt="Khamrah Lattafa">
+                </div>
+                <div class="card-info">
+                    <span class="brand">Lattafa</span>
+                    <h3>Khamrah Unisex</h3>
+                    <p class="price">30.999 Kz</p>
+                    <button class="btn-card" onclick="adicionarAoCarrinho('Khamrah Lattafa')">Comprar</button>
+                </div>
+            </div>
+            <div class="card-premium">
+                <div class="card-img-box">
+                    <img src="images/fakhar.png.png" alt="fakhar">
+                </div>
+                <div class="card-info">
+                    <span class="brand">Lattafa</span>
+                    <h3>Club de Nuit Intense</h3>
+                    <p class="price">25.999 Kz</p>
+                    <button class="btn-card" onclick="adicionarAoCarrinho('Club de Nuit Intense')">Comprar</button>
+                </div>
+            </div>
+
+            <div class="card-premium">
+                <div class="card-img-box">
+                    <img src="images/fa.png.png" alt="Fakhar Black">
+                </div>
+                <div class="card-info">
+                    <span class="brand">Lattafa</span>
+                    <h3>Fakhar Lattafa</h3>
+                    <p class="price">25.999 Kz</p>
+                    <button class="btn-card" onclick="adicionarAoCarrinho('Fakhar Lattafa')">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-premium">
+        <div class="footer-content">
+            <h3>Gomes Perfumaria & Delivery</h3>
+            <p>Fragrâncias exclusivas e importadas que definem a sua presença.</p>
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Gomes Perfumaria & Delivery. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/244959374406" class="whatsapp-float" target="_blank">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
